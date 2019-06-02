@@ -1,0 +1,23 @@
+site_name: Echarts geomapping
+repo_url: https://github.com/echarts-maps/echarts-geomapping-book
+edit_uri: edit/master/book/
+
+
+nav:
+  - HOME: index.md
+  - Tools:
+    - geojson.io: tools/geojson-io.md
+    - mapshaper: tools/mapshaper.md
+    - echarts-mapmaker: tools/mapmaker.md
+    - GDAL: tools/gdal.md
+  - Geomapping 101:
+    - Make a contour of Beijing: howtos/dissolve-internal-borders.md
+    - Where do the county maps come from?: howtos/split-geojson.md
+    - Make northern China map: howtos/split-and-merge.md
+  - Intermediate:
+    - Create new geo shape and append it: howtos/add-ji-zhou-qu-to-tianjin.md
+    - Source Switzerland map from natural earth data: howtos/switzerland.md
+
+
+docs_dir: book
+site_dir: docs
