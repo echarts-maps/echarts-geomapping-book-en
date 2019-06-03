@@ -68,13 +68,39 @@
 <li >
     <a href="../../tools/gdal/">GDAL</a>
 </li>
+                                    
+<li >
+    <a href="../../geojson-sources/">Geojson data source</a>
+</li>
                                 </ul>
                             </li>
-                            <li >
-                                <a href="../../geojson-sources/">Geojsons</a>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Tutorial <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li >
+    <a href="../101/">Draw The Forbidden City</a>
+</li>
+                                    
+<li >
+    <a href="../102/">Integrate with pyecharts</a>
+</li>
+                                    
+<li >
+    <a href="../103/">Render The Forbidden City using pyecharts</a>
+</li>
+                                    
+<li >
+    <a href="../104/">Bring The Forbidden City into jupyter notebook</a>
+</li>
+                                    
+<li >
+    <a href="../105/">Sharing The Forbidden City with others</a>
+</li>
+                                </ul>
                             </li>
                             <li class="dropdown active">
-                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Geomapping 101 <b class="caret"></b></a>
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Use Cases <b class="caret"></b></a>
                                 <ul class="dropdown-menu">
                                     
 <li >
@@ -88,11 +114,6 @@
 <li >
     <a href="../split-and-merge/">Make northern China map</a>
 </li>
-                                </ul>
-                            </li>
-                            <li class="dropdown">
-                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Intermediate <b class="caret"></b></a>
-                                <ul class="dropdown-menu">
                                     
 <li >
     <a href="../add-ji-zhou-qu-to-tianjin/">Create new geo shape and append it</a>
@@ -155,7 +176,7 @@ Let drop Beijing geojson file into <a href="https://jsoneditoronline.org">json e
 <p><img alt="beijing-geojson-inspection" src="../../image/beijing-node-inspection.png" /></p>
 <h2 id="one-step-operation">One step operation</h2>
 <p>Now let use echarts-mapmaker's split:</p>
-<pre><code>$ split geojson/shape-with-internal-borders/beijing.json
+<div class="codehilite"><pre><span></span>$ split geojson/shape-with-internal-borders/beijing.json
 $ ls
 东城区.geojson     怀柔区.geojson     通州区.geojson
 丰台区.geojson     房山区.geojson     顺义区.geojson
@@ -163,7 +184,8 @@ $ ls
 密云区.geojson     朝阳区.geojson     门头沟区.geojson
 平谷区.geojson     海淀区.geojson
 延庆区.geojson     西城区.geojson
-</code></pre>
+</pre></div>
+
 
 <h2 id="conclusion">Conclusion</h2>
 <p><a href="https://echarts-maps.github.io/echarts-china-counties-js/pages/index.html">2882 counties, islands and districts</a> were done in this way.</p></div>

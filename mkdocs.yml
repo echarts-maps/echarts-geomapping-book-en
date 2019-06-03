@@ -10,15 +10,23 @@ nav:
     - mapshaper: tools/mapshaper.md
     - echarts-mapmaker: tools/mapmaker.md
     - GDAL: tools/gdal.md
-  - Geojsons: geojson-sources.md
-  - Geomapping 101:
+    - Geojson data source: geojson-sources.md
+  - Tutorial:
+    - Draw The Forbidden City: howtos/101.md
+    - Integrate with pyecharts: howtos/102.md
+    - Render The Forbidden City using pyecharts: howtos/103.md
+    - Bring The Forbidden City into jupyter notebook: howtos/104.md
+    - Sharing The Forbidden City with others: howtos/105.md
+  - Use Cases:
     - Make a contour of Beijing: howtos/dissolve-internal-borders.md
     - Where do the county maps come from?: howtos/split-geojson.md
     - Make northern China map: howtos/split-and-merge.md
-  - Intermediate:
     - Create new geo shape and append it: howtos/add-ji-zhou-qu-to-tianjin.md
     - Source Switzerland map from natural earth data: howtos/switzerland.md
 
 
 docs_dir: book
 site_dir: docs
+
+markdown_extensions:
+  - codehilite

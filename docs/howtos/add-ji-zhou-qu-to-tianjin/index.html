@@ -68,13 +68,39 @@
 <li >
     <a href="../../tools/gdal/">GDAL</a>
 </li>
+                                    
+<li >
+    <a href="../../geojson-sources/">Geojson data source</a>
+</li>
                                 </ul>
                             </li>
-                            <li >
-                                <a href="../../geojson-sources/">Geojsons</a>
-                            </li>
                             <li class="dropdown">
-                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Geomapping 101 <b class="caret"></b></a>
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Tutorial <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li >
+    <a href="../101/">Draw The Forbidden City</a>
+</li>
+                                    
+<li >
+    <a href="../102/">Integrate with pyecharts</a>
+</li>
+                                    
+<li >
+    <a href="../103/">Render The Forbidden City using pyecharts</a>
+</li>
+                                    
+<li >
+    <a href="../104/">Bring The Forbidden City into jupyter notebook</a>
+</li>
+                                    
+<li >
+    <a href="../105/">Sharing The Forbidden City with others</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown active">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Use Cases <b class="caret"></b></a>
                                 <ul class="dropdown-menu">
                                     
 <li >
@@ -88,11 +114,6 @@
 <li >
     <a href="../split-and-merge/">Make northern China map</a>
 </li>
-                                </ul>
-                            </li>
-                            <li class="dropdown active">
-                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Intermediate <b class="caret"></b></a>
-                                <ul class="dropdown-menu">
                                     
 <li class="active">
     <a href="./">Create new geo shape and append it</a>
@@ -172,8 +193,9 @@ $ ls merged_tianjin.geojson</code></p>
 </ol>
 <h2 id="make-a-js-file">Make a js file</h2>
 <p>This needs <a href="../../tools/mapmaker/">echarts-mapmaker</a>.</p>
-<pre><code>$ makejs tianjin.geojson tianjin.js 天津
-</code></pre>
+<div class="codehilite"><pre><span></span>$ makejs tianjin.geojson tianjin.js 天津
+</pre></div>
+
 
 <p>Please note that the last name is a map registry name so you will need to use the
 same name inside echarts.</p></div>
