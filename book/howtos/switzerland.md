@@ -1,7 +1,5 @@
 # Source Switzerland from natural earth data
 
-## What is natural earth data?
-
 ## How to source Switzerland from natural earth data?
 
 Before we start, please get [GDAL](../tools/gdal.md) installed

@@ -10,6 +10,7 @@ nav:
     - mapshaper: tools/mapshaper.md
     - echarts-mapmaker: tools/mapmaker.md
     - GDAL: tools/gdal.md
+  - Geojsons: geojson-sources.md
   - Geomapping 101:
     - Make a contour of Beijing: howtos/dissolve-internal-borders.md
     - Where do the county maps come from?: howtos/split-geojson.md
