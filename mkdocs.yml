@@ -12,11 +12,11 @@ nav:
     - GDAL: tools/gdal.md
     - Geojson data source: geojson-sources.md
   - Tutorial:
-    - Draw The Forbidden City: howtos/101.md
-    - Integrate with pyecharts: howtos/102.md
-    - Render The Forbidden City using pyecharts: howtos/103.md
-    - Bring The Forbidden City into jupyter notebook: howtos/104.md
-    - Sharing The Forbidden City with others: howtos/105.md
+    - Draw The Forbidden City: tutorial/101.md
+    - Integrate with pyecharts: tutorial/102.md
+    - Render The Forbidden City using pyecharts: tutorial/103.md
+    - Bring The Forbidden City into jupyter notebook: tutorial/104.md
+    - Sharing The Forbidden City with others: tutorial/105.md
   - Use Cases:
     - Make a contour of Beijing: howtos/dissolve-internal-borders.md
     - Where do the county maps come from?: howtos/split-geojson.md
