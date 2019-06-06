@@ -189,22 +189,8 @@ handy for me. </p>
 <p>Please wait for github pages to be available.</p>
 </li>
 </ol>
-<h3 id="update-registryjson">Update registry.json</h3>
-<p>Since we have now published the js file, registry.json needs to be updated as:</p>
-<div class="codehilite"><pre><span></span><span class="err">{</span>
-    <span class="ss">&quot;GITHUB_URL&quot;</span><span class="p">:</span> <span class="ss">&quot;https://echarts-maps.github.io/The-Forbidden-City-Demo&quot;</span><span class="p">,</span>
-    <span class="ss">&quot;JS_FOLDER&quot;</span><span class="p">:</span> <span class="ss">&quot;/&quot;</span><span class="p">,</span>
-    <span class="ss">&quot;PINYIN_MAP&quot;</span><span class="p">:</span> <span class="err">{</span>
-         <span class="ss">&quot;The Forbidden City&quot;</span><span class="p">:</span> <span class="ss">&quot;The-Forbidden-City&quot;</span>
-    <span class="err">}</span><span class="p">,</span>
-    <span class="ss">&quot;FILE_MAP&quot;</span><span class="p">:</span> <span class="err">{</span>
-         <span class="ss">&quot;The-Forbidden-City&quot;</span><span class="p">:</span> <span class="ss">&quot;The-Forbidden-City&quot;</span>
-    <span class="err">}</span>
-<span class="err">}</span>
-</pre></div>
-
-
-<p>And your python file can then use the github site url in rendering:</p>
+<h3 id="update-the-url-link">Update the url link</h3>
+<p>Since the link is public, you now can update it in your script and share it.</p>
 <div class="codehilite"><pre><span></span><span class="kn">from</span> <span class="nn">pyecharts</span> <span class="kn">import</span> <span class="n">options</span> <span class="k">as</span> <span class="n">opts</span>
 <span class="kn">from</span> <span class="nn">pyecharts.charts</span> <span class="kn">import</span> <span class="n">Geo</span>
 <span class="kn">from</span> <span class="nn">pyecharts.datasets</span> <span class="kn">import</span> <span class="n">register_url</span>

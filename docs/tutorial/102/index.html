@@ -169,13 +169,9 @@
 
 <h2 id="create-a-custom-registry">Create a custom registry</h2>
 <div class="codehilite"><pre><span></span><span class="err">{</span>
-    <span class="ss">&quot;GITHUB_URL&quot;</span><span class="p">:</span> <span class="ss">&quot;http://localhost:8000&quot;</span><span class="p">,</span>
     <span class="ss">&quot;JS_FOLDER&quot;</span><span class="p">:</span> <span class="ss">&quot;/&quot;</span><span class="p">,</span>
-    <span class="ss">&quot;PINYIN_MAP&quot;</span><span class="p">:</span> <span class="err">{</span>
-         <span class="ss">&quot;The Forbidden City&quot;</span><span class="p">:</span> <span class="ss">&quot;The-Forbidden-City&quot;</span><span class="p">,</span>
-    <span class="err">}</span><span class="p">,</span>
     <span class="ss">&quot;FILE_MAP&quot;</span><span class="p">:</span> <span class="err">{</span>
-         <span class="ss">&quot;The-Forbidden-City&quot;</span><span class="p">:</span> <span class="ss">&quot;The-Forbidden-City&quot;</span>
+         <span class="ss">&quot;The Forbidden City&quot;</span><span class="p">:</span> <span class="ss">&quot;The-Forbidden-City&quot;</span>
     <span class="err">}</span>
 <span class="err">}</span>
 </pre></div>
@@ -184,7 +180,10 @@
 <h2 id="host-it-locally">Host it locally</h2>
 <div class="codehilite"><pre><span></span>$ python -m http.server
 Serving HTTP on <span class="m">0</span>.0.0.0 port <span class="m">8000</span> ...
-</pre></div></div>
+</pre></div>
+
+
+<p>You should be able to access <a href="http://127.0.0.1:8000/registry.json]">http://127.0.0.1:8000/registry.json</a></p></div>
         </div>
 
         <footer class="col-md-12">
