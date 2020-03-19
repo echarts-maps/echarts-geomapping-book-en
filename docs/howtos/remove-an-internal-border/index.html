@@ -8,7 +8,7 @@
         
         
         <link rel="shortcut icon" href="../../img/favicon.ico">
-        <title>Bring The Forbidden City into jupyter notebook - Echarts geomapping</title>
+        <title>How to remove an internal border - Echarts geomapping</title>
         <link href="../../css/bootstrap-custom.min.css" rel="stylesheet">
         <link href="../../css/font-awesome.min.css" rel="stylesheet">
         <link href="../../css/base.css" rel="stylesheet">
@@ -74,57 +74,57 @@
 </li>
                                 </ul>
                             </li>
-                            <li class="dropdown active">
+                            <li class="dropdown">
                                 <a href="#" class="dropdown-toggle" data-toggle="dropdown">Tutorial <b class="caret"></b></a>
                                 <ul class="dropdown-menu">
                                     
 <li >
-    <a href="../101/">Draw The Forbidden City</a>
+    <a href="../../tutorial/101/">Draw The Forbidden City</a>
 </li>
                                     
 <li >
-    <a href="../102/">Integrate with pyecharts</a>
+    <a href="../../tutorial/102/">Integrate with pyecharts</a>
 </li>
                                     
 <li >
-    <a href="../103/">Render The Forbidden City using pyecharts</a>
-</li>
-                                    
-<li class="active">
-    <a href="./">Bring The Forbidden City into jupyter notebook</a>
+    <a href="../../tutorial/103/">Render The Forbidden City using pyecharts</a>
 </li>
                                     
 <li >
-    <a href="../105/">Sharing The Forbidden City with others</a>
+    <a href="../../tutorial/104/">Bring The Forbidden City into jupyter notebook</a>
+</li>
+                                    
+<li >
+    <a href="../../tutorial/105/">Sharing The Forbidden City with others</a>
 </li>
                                 </ul>
                             </li>
-                            <li class="dropdown">
+                            <li class="dropdown active">
                                 <a href="#" class="dropdown-toggle" data-toggle="dropdown">Use Cases <b class="caret"></b></a>
                                 <ul class="dropdown-menu">
                                     
 <li >
-    <a href="../../howtos/dissolve-internal-borders/">Make a contour of Beijing</a>
+    <a href="../dissolve-internal-borders/">Make a contour of Beijing</a>
 </li>
                                     
 <li >
-    <a href="../../howtos/split-geojson/">Where do the county maps come from?</a>
+    <a href="../split-geojson/">Where do the county maps come from?</a>
 </li>
                                     
 <li >
-    <a href="../../howtos/split-and-merge/">Make northern China map</a>
+    <a href="../split-and-merge/">Make northern China map</a>
+</li>
+                                    
+<li class="active">
+    <a href="./">How to remove an internal border</a>
 </li>
                                     
 <li >
-    <a href="../../howtos/remove-an-internal-border/">How to remove an internal border</a>
+    <a href="../add-ji-zhou-qu-to-tianjin/">Create new geo shape and append it</a>
 </li>
                                     
 <li >
-    <a href="../../howtos/add-ji-zhou-qu-to-tianjin/">Create new geo shape and append it</a>
-</li>
-                                    
-<li >
-    <a href="../../howtos/switzerland/">Source Switzerland map from natural earth data</a>
+    <a href="../switzerland/">Source Switzerland map from natural earth data</a>
 </li>
                                 </ul>
                             </li>
@@ -137,17 +137,17 @@
                             </a>
                         </li>
                             <li >
-                                <a rel="next" href="../103/">
+                                <a rel="next" href="../split-and-merge/">
                                     <i class="fa fa-arrow-left"></i> Previous
                                 </a>
                             </li>
                             <li >
-                                <a rel="prev" href="../105/">
+                                <a rel="prev" href="../add-ji-zhou-qu-to-tianjin/">
                                     Next <i class="fa fa-arrow-right"></i>
                                 </a>
                             </li>
                             <li>
-                                <a href="https://github.com/echarts-maps/echarts-geomapping-book/edit/master/book/tutorial/104.md"><i class="fa fa-github"></i> Edit on GitHub</a>
+                                <a href="https://github.com/echarts-maps/echarts-geomapping-book/edit/master/book/howtos/remove-an-internal-border.md"><i class="fa fa-github"></i> Edit on GitHub</a>
                             </li>
                     </ul>
                 </div>
@@ -157,59 +157,29 @@
         <div class="container">
                 <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
     <ul class="nav bs-sidenav">
-        <li class="main active"><a href="#get-it-displayed-in-jupyter-notebook">Get it displayed in jupyter notebook</a></li>
-            <li><a href="#preparation">Preparation</a></li>
-            <li><a href="#paste-the-following-code-and-press-run">Paste the following code and press Run:</a></li>
-            <li><a href="#here-is-what-you-will-get">Here is what you will get:</a></li>
+        <li class="main active"><a href="#how-to-remove-an-internal-border-in-pan-zhi-hua-city">How to remove an internal border in Pan Zhi Hua city</a></li>
     </ul>
 </div></div>
                 <div class="col-md-9" role="main">
 
-<h1 id="get-it-displayed-in-jupyter-notebook">Get it displayed in jupyter notebook</h1>
-<h2 id="preparation">Preparation</h2>
+<h1 id="how-to-remove-an-internal-border-in-pan-zhi-hua-city">How to remove an internal border in Pan Zhi Hua city</h1>
+<p>The problem definition：</p>
+<p><img alt="screenshot" src="../../image/panzhihua/bianjie.png" /></p>
+<p>The map after fix：</p>
+<p><img alt="screenshot" src="../../image/panzhihua/wubianjie.png" /></p>
+<p>In an overview, let's single out Pan Zhi Hua city from Si Chuan province map, dissolve its internal borader and put it back</p>
+<p>Details：</p>
 <ol>
-<li>
-<p>In order to get it displayed in jupyter notebook, you will need to have
-the notebook first. If you already have it, for example, you are using
-anacornda, you can skip this step.</p>
-<p><code>pip install jupyter-notebook</code></p>
-</li>
-<li>
-<p>Of course, you will need to install <code>pyecharts</code></p>
-<p><code>pip install pyecharts&gt;=1.2.0</code></p>
-</li>
-<li>
-<p>Launch jupyter-notebook</p>
-<p><code>$ jupyter-notebook</code></p>
-</li>
-<li>
-<p>Open a new notebook.</p>
-<p><img alt="jupyter-notebook" src="../../image/jupyter-notebook.png" /></p>
-</li>
-</ol>
-<h2 id="paste-the-following-code-and-press-run">Paste the following code and press <code>Run</code>:</h2>
-<div class="codehilite"><pre><span></span><span class="kn">from</span> <span class="nn">pyecharts</span> <span class="kn">import</span> <span class="n">options</span> <span class="k">as</span> <span class="n">opts</span>
-<span class="kn">from</span> <span class="nn">pyecharts.charts</span> <span class="kn">import</span> <span class="n">Geo</span>
-<span class="kn">from</span> <span class="nn">pyecharts.datasets</span> <span class="kn">import</span> <span class="n">register_url</span>
-
-<span class="n">register_url</span><span class="p">(</span><span class="s2">&quot;http://127.0.0.1:8000&quot;</span><span class="p">)</span>
-
-<span class="n">g</span> <span class="o">=</span> <span class="p">(</span>
-       <span class="n">Geo</span><span class="p">()</span>
-        <span class="o">.</span><span class="n">add_schema</span><span class="p">(</span><span class="n">maptype</span><span class="o">=</span><span class="s2">&quot;The Forbidden City&quot;</span><span class="p">)</span>
-        <span class="o">.</span><span class="n">set_global_opts</span><span class="p">(</span>
-            <span class="n">title_opts</span><span class="o">=</span><span class="n">opts</span><span class="o">.</span><span class="n">TitleOpts</span><span class="p">(</span><span class="n">title</span><span class="o">=</span><span class="s2">&quot;The Forbidden City in Beijing&quot;</span><span class="p">),</span>
-        <span class="p">)</span>
-<span class="p">)</span>
-<span class="n">g</span><span class="o">.</span><span class="n">render_notebook</span><span class="p">()</span>
-</pre></div>
-
-
-<p>You may notice that above code has no difference to the code in previous
-section, apart from <code>g.render_noteboo()</code>. That is the only difference when
-you use it with jupyter notebook.</p>
-<h2 id="here-is-what-you-will-get">Here is what you will get:</h2>
-<p><img alt="display" src="../../image/The-Forbidden-City-in-notebook.png" /></p></div>
+<li>Run mapmaker's <code>split</code> command, and split up <code>echarts/map/json/province/sichuan.json</code>.</li>
+<li>Then <code>decompress 攀枝花市.geojson d_pan.geojson</code></li>
+<li>Dissolve internal borders: <code>mapshaper d_pan.geojson  -dissolve2 -o d_pan_shape_only.geojson</code></li>
+<li>Please note, <code>d_pan_shape_only.geojson</code> cannot be used by <code>echarts</code></li>
+<li>Please <code>mapmaker</code> command： <code>shaper2echarts d_pan_shape_only.geojson d_pan_shape_only_echarts.geojson 攀枝花市</code>, so that <code>d_pan_shape_only_echarts.geojson</code> can be used with echarts.</li>
+<li>Before the geojson is inserted back, we'd better UTF8-ecode it: <code>compress d_pan_shape_only_echarts.geojson utf_encoded_pan_shape_only.geojson</code></li>
+<li>Now let's put it back: <code>merge echarts/map/json/province/sichuan.json utf_encoded_pan_shape_only.geojson</code></li>
+<li>Voila, here is the final geojson file: <code>merged_sichuan.json</code></li>
+<li>If you want a javascript file, you need to run one more command： <code>makejs merged_sichuan.json sichuan.js 四川</code></li>
+</ol></div>
         </div>
 
         <footer class="col-md-12">
