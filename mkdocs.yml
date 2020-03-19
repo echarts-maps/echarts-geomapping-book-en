@@ -12,6 +12,7 @@ nav:
     - GDAL: tools/gdal.md
     - Geojson data source: geojson-sources.md
   - Tutorial:
+
     - Draw The Forbidden City: tutorial/101.md
     - Integrate with pyecharts: tutorial/102.md
     - Render The Forbidden City using pyecharts: tutorial/103.md
@@ -21,6 +22,7 @@ nav:
     - Make a contour of Beijing: howtos/dissolve-internal-borders.md
     - Where do the county maps come from?: howtos/split-geojson.md
     - Make northern China map: howtos/split-and-merge.md
+    - How to remove an internal border: howtos/remove-an-internal-border.md
     - Create new geo shape and append it: howtos/add-ji-zhou-qu-to-tianjin.md
     - Source Switzerland map from natural earth data: howtos/switzerland.md
 
